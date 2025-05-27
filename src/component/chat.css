@@ -1,0 +1,664 @@
+/* General Modal Styling
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal,
+.modal1 {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal h2,
+.modal1 h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal input,
+.modal1 input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.modal button,
+.modal1 button {
+  background-color: #4a76a8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.modal button:hover,
+.modal1 button:hover {
+  background-color: #3b5f8a;
+}
+
+.modal1 label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.modal1 input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Improved Checkbox Group Styling */
+/* General Modal Styling */
+/* General Modal Styling */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal,
+.modal1 {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal h2,
+.modal1 h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal input,
+.modal1 input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.modal button,
+.modal1 button {
+  background-color: #4a76a8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.modal button:hover,
+.modal1 button:hover {
+  background-color: #3b5f8a;
+}
+
+.modal1 label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.modal1 input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Improved Checkbox Group Styling */
+.modal1 .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.modal1 .checkbox-item {
+  display: flex;
+  align-items: center;
+  flex: 1 1 45%;
+  min-width: 140px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.modal1 .checkbox-item:hover {
+  background-color: #e6f0fa;
+}
+
+.modal1 .checkbox-item input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.modal1 .checkbox-item label {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: 15px;
+  background-color: #4a76a8;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.plus-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  
+}
+
+.sidebar-user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar-user {
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.sidebar-user:hover {
+  background-color: #e6f0fa;
+}
+
+.sidebar-user.selected {
+  background-color: #d2e4f7;
+  font-weight: bold;
+}
+
+.sidebar-user.self {
+  cursor: default;
+  color: #888;
+}
+
+.user-status {
+  margin-left: 10px;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Main Chat Area */
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.chat-header {
+  background-color: #4a76a8;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  align-items: start;
+}
+
+.status {
+  font-size: 0.9rem;
+}
+
+.connected {
+  color: #a3ffb3;
+
+
+}
+
+/* Dropdown Styling */
+.dropdown-options {
+  position: absolute;
+  top: 50px; /* Adjusted to appear below the plus icon */
+  right: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1001; /* Ensure it appears above other elements */
+  width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-options div {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-options div:last-child {
+  border-bottom: none;
+}
+
+.dropdown-options div:hover {
+  background-color: #f2f2f2;
+}
+
+/* Messages Area */
+.messages-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-messages {
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+}
+
+/* Message Bubbles */
+.message {
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  border-radius: 20px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.message-sender {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.my-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.other-message {
+  align-self: flex-start;
+  background-color: #fff;
+}
+
+.system-message {
+  align-self: center;
+  background-color: #fdd;
+  font-style: italic;
+}
+
+/* Message Form */
+.message-form {
+  display: flex;
+  padding: 15px 20px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+
+.message-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+.message-form button {
+  margin-left: 10px;
+  background-color: #4a76a8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.message-form button:hover:not(:disabled) {
+  background-color: #3b5f8a;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .chat-container {
+    flex-direction: column; /* Stack sidebar and chat vertically */
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-height: 30vh; /* Limit sidebar height */
+    overflow-y: auto;
+  }
+
+  .main-chat {
+    flex: 1;
+    height: calc(100vh - 30vh); /* Adjust height for chat area */
+  }
+
+  .modal,
+  .modal1 {
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .chat-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .message-form {
+    padding: 10px 15px;
+  }
+
+  .message-form input {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .message-form button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .modal1 .checkbox-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .modal1 .checkbox-item {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .dropdown-options {
+    top: 40px; /* Adjust for smaller screens */
+    right: 10px;
+    width: 120px;
+  }
+
+  .sidebar-header {
+    padding: 10px;
+  }
+
+  .sidebar-header h3 {
+    font-size: 1rem;
+  }
+
+  .plus-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-container {
+    border: none;
+    border-radius: 0;
+  }
+
+  .modal,
+  .modal1 {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .modal h2,
+  .modal1 h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal input,
+  .modal1 input[type="text"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .modal button,
+  .modal1 button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .messages-container {
+    padding: 10px;
+  }
+
+  .message {
+    max-width: 85%;
+    padding: 10px 12px;
+  }
+
+  .chat-header {
+    padding: 10px 15px;
+  }
+
+  .chat-header h1 {
+    font-size: 1rem;
+  }
+
+  .status {
+    font-size: 0.8rem;
+  }
+
+  /* .dropdown-options {
+    width: 100px;
+    padding: 5px;
+    
+  } */
+
+  .dropdown-options div {
+    padding: 3px 8px;
+    font-size: 0.85rem;
+    
+  }
+}
+.online-status {
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+.group-members span {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.dropdown-options {
+ 
+  color:#4a76a8
+}
+.group-members-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.group-members-list li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.modal1 {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal1 button {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.group-members-list li span {
+  background: var(--accent-color);
+  color:cadetblue;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size:medium;
+  font-weight: 500;
+  margin-left: 8px;
+}
+ .message-status {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 4px;
+    display: block;
+  }
+  .seen-by-list {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 4px;
+    display: block;
+  }
+  .typing-indicator {
+  font-style: italic;
+  color: #888;
+  margin: 10px;
+  font-size: 0.9em;
+}
+.typing-indicator-main {
+  padding: 10px;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
